@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", serif;
+}
+
+.main-container{
+  width: 100%;
+  height: 100vh;
+  background: #F4D04E;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-card{
+  width: 24rem;
+  height: auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0.5rem 0.5rem 0 0 #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.image-container{
+  width: 100%;
+  height: auto;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.625rem;
+}
+
+.content-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.75rem
+}
+
+.chip-and-date{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap:0.5rem;
+}
+
+.chip-container{
+  width: fit-content;
+  height:auto;
+  background-color: #F4D04E;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.chip-container h3{
+  font-weight: 800;
+  line-height: 150%;
+  font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+  color: #111;
+}
+
+.date-container{
+  width: fit-content;
+  height: auto;
+}
+
+.date-container p{
+  color:#111;
+  font-weight: 500;
+  font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+}
+
+
+.title-and-description{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.title-and-description h2{
+  color: #111;
+  font-weight: 800;
+  line-height: 150%;
+  font-size: clamp(1.5rem, 2.5vw, 1.25rem);
+}
+
+.title-and-description p{
+  color: #6B6B6B;
+  font-weight: 500;
+  font-size: clamp(0.875rem, 2.5vw, 1rem);
+}
+
+.author-container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-image-container{
+  width: 2rem;
+  height: 2rem;
+}
+
+.author-image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.625rem;
+}
+
+.author-info-container{
+  width: fit-content;
+  height: auto;
+}
+
+.author-info-container h3{
+  color:#111;
+  font-size: 0.875rem;
+}
+
+/* Mobile screen */
+
+@media only screen and (max-width: 600px){
+  /* Adjustments for smaller screens */
+  .main-container {
+    width: 100%;
+    height: 100vh;
+    background: #F4D04E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1.5rem; 
+  }
+  .blog-card{
+    width: 100%;
+    height: auto;
+  }
+}
+
